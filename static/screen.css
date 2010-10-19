@@ -56,6 +56,7 @@ h2{
 
 .banner .other {
 	color: #d2232a;
+	display: block;
 }
 
 .other {
@@ -69,6 +70,13 @@ h2{
 	background: url('images/main_texture.jpg') center top repeat-x;
 	height: 365px;
 	overflow: visible;
+}
+
+.maintexturesmall{
+	background: url('images/main_texture_small.jpg') center top repeat-x;
+	height: 365px;
+	overflow: visible;
+	padding-top: 60px;
 }
 
 .maincontainer{
@@ -88,8 +96,14 @@ h2{
 	height: 100%;
 }
 
+.left_alt{
+	float: left;
+	width: 630px;
+	height: 100%;
+}
+
 .maincontainer .left{
-	background: url('images/burlap_left.png') center top no-repeat ;
+	background: url('images/burlap_left.jpg') center top no-repeat ;
 	padding: 40px 36px 0 36px;
 	overflow: visible;
 	height: 490px;
@@ -122,17 +136,20 @@ input{
 
 #zipcode{
 	background: url('images/zip_background.png') left top no-repeat;
+	display: block;
+	width: 120px;
 }
 
 .join_button {
-	background: url('images/pawbutton.png') center top no-repeat transparent;
+	background: url('images/pawbutton.png') top right no-repeat;
 	border: none;
-	width: 63px;
+	width: 128px;
 	height: 58px;
-	margin: -55px 0 0 188px;
+	margin: -57px 0 0 127px;
 	position: absolute;
 	cursor: pointer;
 }
+.join_button:hover { background: url('images/pawbutton.png') right -57px no-repeat;}
 
 #sflogo{
 	background:url('images/sflogo.png') center top no-repeat;
