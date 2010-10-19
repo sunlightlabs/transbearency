@@ -8,6 +8,16 @@
 	<link rel="stylesheet" href="/static/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<script src="http://use.typekit.com/ddz7xce.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1265484-68']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 </head>
 <body>
 	<div class="headerimage">
@@ -21,22 +31,22 @@
 		<div class="maincontainer">
 			<div class="left">
 				<div id="followthehoney">Want to Learn More? Sign Up Here to Follow the Honey</div>
-				<form id="mailinglist-form" method="get" action="/thanks">
+				<form id="mailinglist-form" method="post" action="http://local.publicequalsonline.com/page/signup/transbearencysignup">
 					<ul>
+						<li>
+							<label class="firstname" for="firstname">First name (optional)</label>
+							<input type="text" id="firstname" name="firstname" value="">
+						</li>
 						<li>
 							<label class="email" for="email">Email</label>
 							<input type="text" id="email" name="email" value="">
 						</li>
 						<li>
-							<label class="firstname" for="firstname">First name</label>
-							<input type="text" id="firstname" name="firstname" value="">
-						</li>
-						<li>
 							<label class="zip" for="zipcode">Zip</label>
-							<input type="text" id="zipcode" name="zipcode" value="">
+							<input type="text" id="zipcode" name="zip" value="">
 						</li>
 						<li>
-							<input type="submit" class="join_button" value="">
+							<input type="submit" class="join_button" name="submit-btn" value="">
 						</li>
 					</ul>
 				</form>
