@@ -102,6 +102,12 @@ h2{
 	height: 100%;
 }
 
+.left_alt p {
+	color: #F5F3E6;
+	line-height: 24px;
+	margin: 20px 0;
+}
+
 .maincontainer .left{
 	background: url('images/burlap_left.jpg') center top no-repeat ;
 	padding: 20px 36px 0 36px;
@@ -125,7 +131,6 @@ h2{
 }
 
 .rally h2{
-	
 	width: 239px;
 	height: 117px;
 	margin: 0 0 0 36px;
