@@ -104,10 +104,28 @@ h2{
 
 .maincontainer .left{
 	background: url('images/burlap_left.jpg') center top no-repeat ;
-	padding: 40px 36px 0 36px;
+	padding: 20px 36px 0 36px;
 	overflow: visible;
-	height: 490px;
+	height: 615px;
 	
+}
+
+.rally{
+	background: url('images/ribbon.png') center top no-repeat;
+	width: 311px;
+	height: 117px;
+	margin: 0 0 36px -36px;
+	padding: 0 0 0 36;
+	color: #ffffff;
+}
+
+.rally h2{
+	
+	width: 239px;
+	height: 117px;
+	margin: 0 0 0 36px;
+	color: #ffffff;
+	padding: 20px 0 0 0;
 }
 
 #followthehoney{
@@ -117,7 +135,7 @@ h2{
 	text-indent: -9999em;
 	display: block;
 	margin: 0 0 20px 0;
-	
+
 }
 
 form li {
