@@ -56,7 +56,6 @@ h2{
 
 .banner .other {
 	color: #d2232a;
-	display: block;
 }
 
 .other {
@@ -106,7 +105,7 @@ h2{
 	background: url('images/burlap_left.jpg') center top no-repeat ;
 	padding: 20px 36px 0 36px;
 	overflow: visible;
-	height: 615px;
+	height: 690px;
 	
 }
 
@@ -117,6 +116,11 @@ h2{
 	margin: 0 0 36px -36px;
 	padding: 0 0 0 36;
 	color: #ffffff;
+	
+}
+
+.rally .other{
+	font-size: 19px;
 }
 
 .rally h2{
@@ -125,6 +129,7 @@ h2{
 	height: 117px;
 	margin: 0 0 0 36px;
 	color: #ffffff;
+	font-size: 14px;
 	padding: 20px 0 0 0;
 }
 
@@ -171,7 +176,7 @@ input{
 
 #sflogo{
 	background:url('images/sflogo.png') center top no-repeat;
-	margin-top: 50px;
+	margin-top: 80px;
 	text-indent: -9999em;
 	display: block;
 	width: 127px;
@@ -219,3 +224,49 @@ input{
 .footer a:link, a:visited, a:active, a:hover{
 	color: #70605a;
 	}
+
+a {
+	color: #70605a;
+}
+.share{
+	width: 237px;
+	font-weight: bold;
+	border-top: solid 2px #807b78;
+	margin-top: 20px;
+	padding-top: 20px;
+	color: #807b78;
+	
+}
+
+h3{
+	font-family: "adrianna-extended-1","adrianna-extended-2",sans-serif;
+	font-size: 17px;
+	font-variant: small-caps;
+	font-style: normal;
+	font-weight: 600;
+	float:left;
+}
+
+.twitter {
+	background: url('images/twitter_icon.png') top center no-repeat;
+	border: none;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+	text-indent: -9999em;
+	float: left;
+
+}
+.twitter:hover { background: url('images/twitter_icon.png') bottom center no-repeat;}
+
+.facebook {
+	background: url('images/face_icon.png') top center no-repeat;
+	border: none;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+	text-indent: -9999em;
+	float: left;
+	padding-left: 20px;
+}
+.facebook:hover { background: url('images/face_icon.png') bottom center no-repeat;}
