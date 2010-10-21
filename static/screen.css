@@ -125,6 +125,16 @@ h2{
 	
 }
 
+.rally a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.rally a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
 .rally .other{
 	font-size: 19px;
 }
