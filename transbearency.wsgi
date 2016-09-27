@@ -1,1 +1,0 @@
-from transbearency import app as application
