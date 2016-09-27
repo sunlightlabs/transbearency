@@ -1,26 +1,28 @@
-{% extends "base.html" %}
+---
+layout: default
+---
 
-{% block content %}
+
 	<div class="maintexture">
 		<div class="maincontainer">
 			<div class="left">
 				<div id="followthehoney">Want to Learn More? Sign Up Here to Follow the Honey</div>
-				<form id="mailinglist-form" method="post" action="http://local.publicequalsonline.com/page/signup/transbearencysignup">
+				<form id="mailinglist-form" >
 					<ul>
 						<li>
 							<label class="firstname" for="firstname">First name (optional)</label>
-							<input type="text" id="firstname" name="firstname" value="">
+							<input type="text" id="firstname" name="firstname" value="" readonly>
 						</li>
 						<li>
 							<label class="email" for="email">Email</label>
-							<input type="text" id="email" name="email" value="">
+							<input type="text" id="email" name="email" value="" readonly>
 						</li>
 						<li>
 							<label class="zip" for="zipcode">ZIP code</label>
-							<input type="text" id="zipcode" name="zip" value="">
+							<input type="text" id="zipcode" name="zip" value="" readonly>
 						</li>
 						<li>
-							<input type="submit" class="join_button" name="submit-btn" value="">
+							<input type="submit" class="join_button" name="submit-btn" value="" onclick="alert('Alas! Transbearency is no more.'); return false;">
 						</li>
 					</ul>
 				</form>
@@ -51,4 +53,3 @@
 			</div>
 		</div>
 	</div>
-{% endblock %}

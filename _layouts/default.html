@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% include base.html %}
 <html>
 <head>
 	<meta charset="utf-8">
@@ -7,14 +8,13 @@
 	<meta name="og:title" content="Sunlight Foundation's Operation Transbearency">
 	<meta name="og:description" content="If you're attending the March to Keep Fear Alive on October 30th, we have a challenge for you: Go as a bear. Bears are awesome, and so is government transparency. Show your support for both.">
 	<meta name="og:type" content="cause">
-	<meta name="og:image" content="http://transbearency.com/static/images/facebook.jpg">
-	<meta name="og:url" content="http://transbearency.com">
+	<meta name="og:image" content="{{base}}static/images/facebook.jpg">
 	<meta name="og:site_name" content="Operation Transbearency">
 	<meta name="fb:admins" content="7812952">
-	<title>{% block title %}Sunlight Foundation's Operation Transbearency{% endblock %}</title>
-	<link rel="stylesheet" href="/static/screen.css" media="screen">
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<link rel="stylesheet" href="{{base}}/static/screen.css" media="screen">
+	<link rel="shortcut icon" href="{{base}}/favicon.ico">
+	<link rel="apple-touch-icon" href="{{base}}/apple-touch-icon.png">
 	<script src="http://use.typekit.com/ddz7xce.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<script>
@@ -38,7 +38,7 @@
 			</a>
 		</div>
 	</div>
-	{% block content %}{% endblock %}
+	{{ content }}
 	<div class="clear"></div>
 	<div class="footer">
 		<div class="left">
